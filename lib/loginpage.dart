@@ -4,12 +4,12 @@ import 'package:flutter_application_1/forgotpassword.dart';
 import 'package:flutter_application_1/menu.dart';
 import 'package:flutter_application_1/sobrepage.dart';
 
-class LoginPage extends StatefulWidget {
+class loginpage extends StatefulWidget {
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _loginpageState createState() => _loginpageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _loginpageState extends State<loginpage> {
   final emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
