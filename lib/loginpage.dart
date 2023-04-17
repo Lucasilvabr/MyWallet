@@ -77,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Menu(),
+                        builder: (context) => menu(),
                       ),
                     );
                   },
@@ -130,7 +130,7 @@ SizedBox(height: 100),
   onTap: () {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => SobrePage()),
+      MaterialPageRoute(builder: (context) => sobrepage()),
     );
   },
   child: const Text(
