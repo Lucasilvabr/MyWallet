@@ -8,39 +8,34 @@ class menu extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Gerenciar'),
+        centerTitle: true,
       ),
-      body: Container(
-        padding: EdgeInsets.all(16),
+      body: Center(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'Selecione uma opção:',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
+            ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                'Depositar',
+                style: TextStyle(fontSize: 50),
               ),
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 30),
             ElevatedButton(
-              onPressed: () {
-                // TODO: Adicionar ação do botão
-              },
-              child: Text('Depositar'),
+              onPressed: () {},
+              child: Text(
+                'Cartões',
+                style: TextStyle(fontSize: 50),
+              ),
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 30),
             ElevatedButton(
-              onPressed: () {
-                // TODO: Adicionar ação do botão
-              },
-              child: Text('Cartões'),
-            ),
-            SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () {
-                // TODO: Adicionar ação do botão
-              },
-              child: Text('Despesas'),
+              onPressed: () {},
+              child: Text(
+                'Despesas',
+                style: TextStyle(fontSize: 50),
+              ),
             ),
           ],
         ),
