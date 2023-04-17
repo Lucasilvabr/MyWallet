@@ -1,6 +1,7 @@
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/deposito.dart';
 
 class menu extends StatelessWidget {
   @override
@@ -15,7 +16,12 @@ class menu extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => deposito()),
+                );
+              },
               child: Text(
                 'Depositar',
                 style: TextStyle(fontSize: 50),
