@@ -10,7 +10,15 @@ class SobrePage extends StatelessWidget {
         title: Text('MY WALLET'),
       ),
       body: Container(
+        margin: EdgeInsets.all(16),
         padding: EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: Colors.grey,
+            width: 2,
+          ),
+          borderRadius: BorderRadius.circular(10),
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

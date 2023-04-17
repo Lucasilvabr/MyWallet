@@ -30,6 +30,7 @@ class _LoginPageState extends State<LoginPage> {
         child: SingleChildScrollView(
           
           child: Column(
+
             mainAxisAlignment: MainAxisAlignment.center,
             children: 
             <Widget>[
@@ -129,7 +130,7 @@ SizedBox(height: 100),
   onTap: () {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => sobrepage()),
+      MaterialPageRoute(builder: (context) => SobrePage()),
     );
   },
   child: const Text(
@@ -147,7 +148,4 @@ SizedBox(height: 100),
       ),
     );
   }
-  
-  sobrepage() {}
-  
 }
