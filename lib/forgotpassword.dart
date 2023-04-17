@@ -34,6 +34,12 @@ class _forgotpasswordPageState extends State<forgotpasswordPage> {
             ElevatedButton(
               onPressed: () {
                 // implementar recuperação de senha
+                // exibir mensagem
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('Uma nova senha foi enviada para seu e-mail.'),
+                  ),
+                );
               },
               child: Text('Recuperar senha'),
             ),

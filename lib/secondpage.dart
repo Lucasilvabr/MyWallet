@@ -1,6 +1,7 @@
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/loginpage.dart';
 
 class secondpage extends StatefulWidget {
   @override
@@ -11,9 +12,14 @@ class _secondpageState extends State<secondpage> {
   final TextEditingController nomeController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController senhaController = TextEditingController();
+ 
+
 
   @override
   Widget build(BuildContext context) {
+     final screenSize = MediaQuery.of(context).size;
+    final buttonWidth = screenSize.width * 0.8;
+    final buttonHeight = screenSize.height * 0.07;
     return Scaffold(
       appBar: AppBar(
         title: Text('Cadastro'),
@@ -51,13 +57,29 @@ class _secondpageState extends State<secondpage> {
             SizedBox(
   height: 32.0,
 ),
-ElevatedButton(
-  onPressed: () {},
-  child: Text('Cadastrar'),
-  style: ElevatedButton.styleFrom(
-    primary: Color.fromARGB(9, 27, 205, 98),
-  ),
-)
+SizedBox(
+                width: buttonWidth,
+                height: buttonHeight,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LoginPage(),
+                      ),
+                    );
+                  },
+                  child: const Text('Cadasstrar',
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 20,
+                          color: Colors.white)),
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(const Color.fromRGBO(41, 182, 246, 100)),
+                  ),
+                ),
+              ),
           ],
         ),
       ),

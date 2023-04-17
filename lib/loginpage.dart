@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/secondpage.dart';
 import 'package:flutter_application_1/forgotpassword.dart';
 import 'package:flutter_application_1/menu.dart';
+import 'package:flutter_application_1/sobrepage.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -20,14 +21,20 @@ class _LoginPageState extends State<LoginPage> {
 
     return Scaffold(
       body: Container(
+
+        width: screenSize.width,
+        height: screenSize.height,
         color: const Color.fromRGBO(243, 243, 244, 1),
         padding: const EdgeInsets.all(16),
+        
         child: SingleChildScrollView(
+          
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+            children: 
+            <Widget>[
               SizedBox(
-                height: screenSize.height * 0.2,
+                height: screenSize.height * 0.15,
                 child: Image.asset('../images/crypto-wallet.png'),
               ),
               const SizedBox(height: 30),
@@ -93,18 +100,54 @@ class _LoginPageState extends State<LoginPage> {
                   );
                 },
                 child: const Text(
-                  'Esqueceu a senha?',
+                  'Crie uma conta',
                   style: TextStyle(
                     decoration: TextDecoration.underline,
                     fontSize: 16,
                     color: Colors.blue,
+                    ),
                   ),
-                ),
               ),
+              GestureDetector(
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => forgotpasswordPage()),
+    );
+  },
+  child: const Text(
+    'Esqueceu a sua senha?',
+    style: TextStyle(
+      decoration: TextDecoration.underline,
+      fontSize: 16,
+      color: Colors.blue,
+    ),
+  ),
+),
+SizedBox(height: 100),
+              GestureDetector(
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => sobrepage()),
+    );
+  },
+  child: const Text(
+    'sobre',
+    style: TextStyle(
+      decoration: TextDecoration.underline,
+      fontSize: 16,
+      color: Colors.blue,
+    ),
+  ),
+),
             ],
           ),
         ),
       ),
     );
   }
+  
+  sobrepage() {}
+  
 }
