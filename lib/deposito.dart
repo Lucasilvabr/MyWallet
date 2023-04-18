@@ -60,8 +60,15 @@ class _depositoState extends State<deposito> {
                   return Text(
                     'R\$ $valor',
                     style: TextStyle(fontSize: 16),
+                    
                   );
+                  ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('você acabou de depositar em sua poupança.'),
+                  ),
+                );
                 },
+                
               ),
             ),
           ],
