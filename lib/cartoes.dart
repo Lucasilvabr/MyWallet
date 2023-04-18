@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class AdicionarCartao extends StatefulWidget {
+class cartoes extends StatefulWidget {
   @override
-  _AdicionarCartaoState createState() => _AdicionarCartaoState();
+  _cartoesState createState() => _cartoesState();
 }
 
-class _AdicionarCartaoState extends State<AdicionarCartao> {
+class _cartoesState extends State<cartoes> {
   final _formKey = GlobalKey<FormState>();
   TextEditingController _numeroController = TextEditingController();
   TextEditingController _nomeController = TextEditingController();
