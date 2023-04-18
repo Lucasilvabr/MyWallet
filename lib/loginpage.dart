@@ -21,19 +21,17 @@ class _loginpageState extends State<loginpage> {
 
     return Scaffold(
       body: Container(
-
         width: screenSize.width,
         height: screenSize.height,
         color: const Color.fromRGBO(243, 243, 244, 1),
         padding: const EdgeInsets.all(16),
-        
         child: SingleChildScrollView(
-          
           child: Column(
-
             mainAxisAlignment: MainAxisAlignment.center,
-            children: 
-            <Widget>[
+            children: <Widget>[
+              SizedBox(
+                height: screenSize.height * 0.15,
+              ),
               SizedBox(
                 height: screenSize.height * 0.15,
                 child: Image.asset('../images/crypto-wallet.png'),
@@ -87,8 +85,8 @@ class _loginpageState extends State<loginpage> {
                           fontSize: 20,
                           color: Colors.white)),
                   style: ButtonStyle(
-                    backgroundColor:
-                        MaterialStateProperty.all<Color>(const Color.fromRGBO(41, 182, 246, 100)),
+                    backgroundColor: MaterialStateProperty.all<Color>(
+                        const Color.fromRGBO(41, 182, 246, 100)),
                   ),
                 ),
               ),
@@ -106,42 +104,43 @@ class _loginpageState extends State<loginpage> {
                     decoration: TextDecoration.underline,
                     fontSize: 16,
                     color: Colors.blue,
-                    ),
                   ),
+                ),
               ),
               GestureDetector(
-  onTap: () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => forgotpasswordPage()),
-    );
-  },
-  child: const Text(
-    'Esqueceu a sua senha?',
-    style: TextStyle(
-      decoration: TextDecoration.underline,
-      fontSize: 16,
-      color: Colors.blue,
-    ),
-  ),
-),
-SizedBox(height: 100),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => forgotpasswordPage()),
+                  );
+                },
+                child: const Text(
+                  'Esqueceu a sua senha?',
+                  style: TextStyle(
+                    decoration: TextDecoration.underline,
+                    fontSize: 16,
+                    color: Colors.blue,
+                  ),
+                ),
+              ),
+              SizedBox(height: 100),
               GestureDetector(
-  onTap: () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => sobrepage()),
-    );
-  },
-  child: const Text(
-    'sobre',
-    style: TextStyle(
-      decoration: TextDecoration.underline,
-      fontSize: 16,
-      color: Colors.blue,
-    ),
-  ),
-),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => sobrepage()),
+                  );
+                },
+                child: const Text(
+                  'sobre',
+                  style: TextStyle(
+                    decoration: TextDecoration.underline,
+                    fontSize: 16,
+                    color: Colors.blue,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
