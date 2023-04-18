@@ -26,19 +26,25 @@ class menu extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => deposito()),
                 );
               },
-              child: const Text('Depositar',
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 50,
-                          color: Colors.white)),
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                        const Color.fromRGBO(41, 182, 246, 100)),
-                    fixedSize: MaterialStateProperty.all<Size>(
-                        Size(buttonWidth, buttonHeight)),
+              child: ElevatedButton(
+                onPressed: () {},
+                child: const Text(
+                  '  Cartões ',
+                  style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 50,
+                      color: Colors.white),
+                ),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                      const Color.fromRGBO(41, 182, 246, 100)),
+                  fixedSize: MaterialStateProperty.all<Size>(
+                      Size(buttonWidth, buttonHeight)),
+                ),
               ),
             ),
             SizedBox(height: 30),
+            
             ElevatedButton(
               onPressed: () {},
               child: const Text('  Cartões ',
@@ -51,6 +57,7 @@ class menu extends StatelessWidget {
                         const Color.fromRGBO(41, 182, 246, 100)),
                     fixedSize: MaterialStateProperty.all<Size>(
                         Size(buttonWidth, buttonHeight)),
+                        
               ),
             ),
             SizedBox(height: 30),

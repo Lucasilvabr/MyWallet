@@ -69,7 +69,7 @@ SizedBox(
                       ),
                     );
                   },
-                  child: const Text('Cadasstrar',
+                  child: const Text('Cadastrar',
                       style: TextStyle(
                           fontFamily: 'Poppins',
                           fontSize: 20,
