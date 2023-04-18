@@ -65,7 +65,7 @@ SizedBox(
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => LoginPage(),
+                        builder: (context) => loginpage(),
                       ),
                     );
                   },

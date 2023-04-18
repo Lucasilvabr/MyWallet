@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/loginpage.dart';
 
-class DepositoPage extends StatefulWidget {
+class deposito extends StatefulWidget {
   @override
-  _DepositoPageState createState() => _DepositoPageState();
+  _depositoState createState() => _depositoState();
 }
 
-class _DepositoPageState extends State<DepositoPage> {
+class _depositoState extends State<deposito> {
   List<double> lancamentos = [];
 
   void _adicionarLancamento(double valor) {
