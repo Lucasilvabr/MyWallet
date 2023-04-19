@@ -28,15 +28,15 @@ class menu extends StatelessWidget {
                 );
               },
               child: const Text('Depositar',
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 50,
-                          color: Colors.white)),
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                        const Color.fromRGBO(41, 182, 246, 100)),
-                    fixedSize: MaterialStateProperty.all<Size>(
-                        Size(buttonWidth, buttonHeight)),
+                  style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 50,
+                      color: Colors.white)),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromRGBO(41, 182, 246, 100)),
+                fixedSize: MaterialStateProperty.all<Size>(
+                    Size(buttonWidth, buttonHeight)),
               ),
             ),
             SizedBox(height: 30),
@@ -48,13 +48,19 @@ class menu extends StatelessWidget {
                 );
               },
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => cartoes()),
+                  );
+                },
                 child: const Text(
-                  '  Cartões ',
+                  'Cartões',
                   style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 50,
-                      color: Colors.white),
+                    fontFamily: 'Poppins',
+                    fontSize: 50,
+                    color: Colors.white,
+                  ),
                 ),
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all<Color>(
@@ -68,15 +74,15 @@ class menu extends StatelessWidget {
             ElevatedButton(
               onPressed: () {},
               child: const Text('Despesas',
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 50,
-                          color: Colors.white)),
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                        const Color.fromRGBO(41, 182, 246, 100)),
-                    fixedSize: MaterialStateProperty.all<Size>(
-                        Size(buttonWidth, buttonHeight)),
+                  style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 50,
+                      color: Colors.white)),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromRGBO(41, 182, 246, 100)),
+                fixedSize: MaterialStateProperty.all<Size>(
+                    Size(buttonWidth, buttonHeight)),
               ),
             ),
           ],
