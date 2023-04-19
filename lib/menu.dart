@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/deposito.dart';
 import 'package:flutter_application_1/cartoes.dart';
+import 'package:flutter_application_1/despesas.dart';
 
 class menu extends StatelessWidget {
   @override
@@ -70,21 +71,29 @@ class menu extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 30),
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text('Despesas',
-                  style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 50,
-                      color: Colors.white)),
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(
-                    const Color.fromRGBO(41, 182, 246, 100)),
-                fixedSize: MaterialStateProperty.all<Size>(
-                    Size(buttonWidth, buttonHeight)),
-              ),
-            ),
+           SizedBox(height: 30),
+ElevatedButton(
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => ExpenseListPage(),
+      ),
+    );
+  },
+  child: const Text('Despesas',
+      style: TextStyle(
+          fontFamily: 'Poppins',
+          fontSize: 50,
+          color: Colors.white)),
+  style: ButtonStyle(
+    backgroundColor: MaterialStateProperty.all<Color>(
+        const Color.fromRGBO(41, 182, 246, 100)),
+    fixedSize: MaterialStateProperty.all<Size>(
+        Size(buttonWidth, buttonHeight)),
+  ),
+),
+
           ],
         ),
       ),
