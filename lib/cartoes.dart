@@ -29,8 +29,16 @@ class _cartoesState extends State<cartoes> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Adicionar cartão'),
-        centerTitle: true,
+        title: Row(
+          children: [
+            Text(
+              'Adicionar Cartão',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ],
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(

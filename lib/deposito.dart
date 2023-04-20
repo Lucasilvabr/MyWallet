@@ -28,18 +28,22 @@ class _depositoState extends State<deposito> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
         title: Row(
           children: [
-            Text('Deposito')
-            
+            Text(
+              'Poupança',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
           ],
-        ), 
+        ),
       ),
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center, // alinhamento centralizado
+          mainAxisAlignment:
+              MainAxisAlignment.center, // alinhamento centralizado
           children: [
             Text(
               'Faça um depósito:',
@@ -54,6 +58,7 @@ class _depositoState extends State<deposito> {
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
                 hintText: 'Valor',
+                border: OutlineInputBorder(),
               ),
               onFieldSubmitted: (String value) {
                 double valor = double.tryParse(value) ?? 0;
@@ -98,7 +103,8 @@ class _depositoState extends State<deposito> {
               ),
             ),
             SizedBox(height: 16),
-            Center( // caixa de texto centralizada
+            Center(
+              // caixa de texto centralizada
               child: Container(
                 padding: EdgeInsets.all(8),
                 decoration: BoxDecoration(

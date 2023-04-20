@@ -78,7 +78,7 @@ class menu extends StatelessWidget {
                   Image.asset('../images/deposito.png'),
                   SizedBox(width: 10),
                   Text(
-                    'Deposito',
+                    'Poupança',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 50,
