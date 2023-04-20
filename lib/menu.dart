@@ -16,6 +16,7 @@ class menu extends StatelessWidget {
       appBar: AppBar(
         title: Text('Gerenciar'),
         centerTitle: true,
+        
       ),
       body: Center(
         child: Column(
@@ -28,11 +29,21 @@ class menu extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => deposito()),
                 );
               },
-              child: const Text('Depositar',
-                  style: TextStyle(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Image.asset('../images/deposito.png'),
+                  SizedBox(width: 10),
+                  Text(
+                    'Deposito',
+                    style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 50,
-                      color: Colors.white)),
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(
                     const Color.fromRGBO(41, 182, 246, 100)),
@@ -55,14 +66,21 @@ class menu extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => cartoes()),
                   );
                 },
-                child: const Text(
-                  'Cartões',
-                  style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontSize: 50,
-                    color: Colors.white,
+                child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Image.asset('../images/cartoes.png'),
+                  SizedBox(width: 10),
+                  Text(
+                    'Cartões',
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 50,
+                      color: Colors.white,
+                    ),
                   ),
-                ),
+                ],
+              ),
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all<Color>(
                       const Color.fromRGBO(41, 182, 246, 100)),
@@ -90,7 +108,7 @@ class menu extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.attach_money),
+                  Image.asset('../images/despesas.png'),
                   SizedBox(width: 10),
                   Text(
                     'Despesas',
