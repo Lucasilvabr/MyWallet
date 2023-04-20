@@ -13,11 +13,54 @@ class menu extends StatelessWidget {
     final buttonHeight = screenSize.height * 0.07;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Gerenciar'),
-        centerTitle: true,
-        
+    appBar: PreferredSize(
+  preferredSize: Size.fromHeight(60.0),
+  child: Stack(
+    children: [
+      Container(
+        decoration: BoxDecoration(
+          color: Colors.blue,
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(30),
+            bottomRight: Radius.circular(30),
+          ),
+        ),
+        height: 100.0,
       ),
+      Positioned(
+        left: 50,
+        top: 5,
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(30),
+            border: Border.all(
+              color: Colors.white,
+              width: 3,
+            ),
+          ),
+          child: CircleAvatar(
+            backgroundImage: AssetImage('../images/perfil.jpg'),
+            radius: 20.0,
+          ),
+        ),
+      ),
+      AppBar(
+        title: Text(
+          'Gerenciar',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
+      ),
+    ],
+  ),
+),
+
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
