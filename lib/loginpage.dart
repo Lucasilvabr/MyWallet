@@ -34,7 +34,7 @@ class _loginpageState extends State<loginpage> {
               ),
               SizedBox(
                 height: screenSize.height * 0.15,
-                child: Image.asset('../images/crypto-wallet.png'),
+                child: Image.asset('../images/walleticon.gif'),
               ),
               const SizedBox(height: 30),
               Container(

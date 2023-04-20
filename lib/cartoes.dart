@@ -37,10 +37,8 @@ class _cartoesState extends State<cartoes> {
                 color: Colors.white,
               ),
             ),
-            
           ],
         ),
-          centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -133,13 +131,15 @@ class _cartoesState extends State<cartoes> {
                       ),
                     ),
                     style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                        Color.fromRGBO(41, 182, 246, 100)),
-                    fixedSize: MaterialStateProperty.all<Size>(
-                        Size(buttonWidth, buttonHeight)),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20.0)))),
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                            Color.fromRGBO(41, 182, 246, 100)),
+                        fixedSize: MaterialStateProperty.all<Size>(
+                            Size(buttonWidth, buttonHeight)),
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                    borderRadius:
+                                        BorderRadius.circular(20.0)))),
                   ),
                 )
               ],
