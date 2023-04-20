@@ -23,7 +23,7 @@ class _loginpageState extends State<loginpage> {
       body: Container(
         width: screenSize.width,
         height: screenSize.height,
-        color: const Color.fromRGBO(243, 243, 244, 1),
+        color: Color.fromARGB(255, 248, 249, 249),
         padding: const EdgeInsets.all(16),
         child: SingleChildScrollView(
           child: Column(
@@ -38,8 +38,14 @@ class _loginpageState extends State<loginpage> {
               ),
               const SizedBox(height: 30),
               Container(
-                child: const Text('MY WALLET',
-                    style: TextStyle(fontSize: 30, color: Colors.grey)),
+                child: const Text(
+                  'MY WALLET',
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.grey,
+                    fontWeight: FontWeight.bold, // adicionado
+                  ),
+                ),
                 alignment: Alignment.center,
               ),
               const SizedBox(height: 60),
