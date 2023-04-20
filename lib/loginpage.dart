@@ -59,6 +59,7 @@ class _loginpageState extends State<loginpage> {
                 width: screenSize.width * 0.8,
                 child: TextField(
                   controller: passwordController,
+                  obscureText: true,
                   decoration: InputDecoration(
                     labelText: 'Password',
                     labelStyle: TextStyle(color: Colors.grey),

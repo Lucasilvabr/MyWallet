@@ -71,29 +71,38 @@ class menu extends StatelessWidget {
                 ),
               ),
             ),
-           SizedBox(height: 30),
-ElevatedButton(
-  onPressed: () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => ExpenseListPage(),
-      ),
-    );
-  },
-  child: const Text('Despesas',
-      style: TextStyle(
-          fontFamily: 'Poppins',
-          fontSize: 50,
-          color: Colors.white)),
-  style: ButtonStyle(
-    backgroundColor: MaterialStateProperty.all<Color>(
-        const Color.fromRGBO(41, 182, 246, 100)),
-    fixedSize: MaterialStateProperty.all<Size>(
-        Size(buttonWidth, buttonHeight)),
-  ),
-),
-
+            SizedBox(height: 30),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ExpenseListPage(),
+                  ),
+                );
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromRGBO(41, 182, 246, 100)),
+                fixedSize: MaterialStateProperty.all<Size>(
+                    Size(buttonWidth, buttonHeight)),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.attach_money),
+                  SizedBox(width: 10),
+                  Text(
+                    'Despesas',
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 50,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

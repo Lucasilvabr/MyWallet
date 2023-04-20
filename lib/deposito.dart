@@ -28,7 +28,13 @@ class _depositoState extends State<deposito> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Depósito'),
+        
+        title: Row(
+          children: [
+            Text('Deposito')
+            
+          ],
+        ), 
       ),
       body: Container(
         padding: EdgeInsets.all(16),
