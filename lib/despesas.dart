@@ -25,24 +25,36 @@ class _ExpenseListPageState extends State<ExpenseListPage> {
   @override
   Widget build(BuildContext context) {
     final appBar = AppBar(
-      title: const Text('Despesas'),
+      title: const Text(
+        'Despesas',
+        style: TextStyle(
+          color: Colors.white, // Define a cor do texto para branco
+        ),
+      ),
     );
 
     final buttonWidth = MediaQuery.of(context).size.width * 0.7;
     final buttonHeight = 70.0;
 
-    final addButton = ElevatedButton(
-      onPressed: _addExpense,
-      child: const Text('Adicionar',
+    final addButton = Center(
+      child: ElevatedButton(
+        onPressed: _addExpense,
+        child: const Text(
+          'Adicionar',
           style: TextStyle(
-              fontFamily: 'Poppins',
-              fontSize: 20,
-              color: Colors.white)),
-      style: ButtonStyle(
-        backgroundColor: MaterialStateProperty.all<Color>(
-            const Color.fromRGBO(41, 182, 246, 100)),
-        fixedSize:
-            MaterialStateProperty.all<Size>(Size(buttonWidth, buttonHeight)),
+            fontFamily: 'Poppins',
+            fontSize: 20,
+            color: Colors.white,
+          ),
+        ),
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all<Color>(
+            const Color.fromRGBO(41, 182, 246, 100),
+          ),
+          fixedSize: MaterialStateProperty.all<Size>(
+            Size(buttonWidth, buttonHeight),
+          ),
+        ),
       ),
     );
 
@@ -52,13 +64,16 @@ class _ExpenseListPageState extends State<ExpenseListPage> {
         TextField(
           controller: _nameController,
           decoration: const InputDecoration(
+              border: OutlineInputBorder(),
               labelText: 'Nome',
               labelStyle: TextStyle(fontSize: 20, color: Colors.black54)),
           style: const TextStyle(fontSize: 20),
         ),
+        SizedBox(height: 16),
         TextField(
           controller: _valueController,
           decoration: const InputDecoration(
+              border: OutlineInputBorder(),
               labelText: 'Valor (R\$)',
               labelStyle: TextStyle(fontSize: 20, color: Colors.black54)),
           style: const TextStyle(fontSize: 20),

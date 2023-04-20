@@ -113,25 +113,33 @@ class _cartoesState extends State<cartoes> {
                   ],
                 ),
                 SizedBox(height: 30),
-                ElevatedButton(
-                  onPressed: () {
-                    if (_formKey.currentState!.validate()) {
-                      // TODO: Adicionar cartão à lista de cartões
-                      Navigator.pop(context);
-                    }
-                  },
-                  child: const Text('Adicionar',
+                Container(
+                  alignment: Alignment.center,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      if (_formKey.currentState!.validate()) {
+                        // TODO: Adicionar cartão à lista de cartões
+                        Navigator.pop(context);
+                      }
+                    },
+                    child: const Text(
+                      'Adicionar',
                       style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 50,
-                          color: Colors.white)),
-                  style: ButtonStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 50,
+                        color: Colors.white,
+                      ),
+                    ),
+                    style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(
-                        const Color.fromRGBO(41, 182, 246, 100)),
+                        Color.fromRGBO(41, 182, 246, 100)),
                     fixedSize: MaterialStateProperty.all<Size>(
                         Size(buttonWidth, buttonHeight)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20.0)))),
                   ),
-                ),
+                )
               ],
             ),
           ),
