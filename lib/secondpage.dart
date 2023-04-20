@@ -12,17 +12,20 @@ class _secondpageState extends State<secondpage> {
   final TextEditingController nomeController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController senhaController = TextEditingController();
- 
-
 
   @override
   Widget build(BuildContext context) {
-     final screenSize = MediaQuery.of(context).size;
+    final screenSize = MediaQuery.of(context).size;
     final buttonWidth = screenSize.width * 0.8;
     final buttonHeight = screenSize.height * 0.07;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cadastro'),
+        title: Text(
+          'Cadastro',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
         centerTitle: true,
       ),
       body: Container(
@@ -55,31 +58,31 @@ class _secondpageState extends State<secondpage> {
               ),
             ),
             SizedBox(
-  height: 32.0,
-),
-SizedBox(
-                width: buttonWidth,
-                height: buttonHeight,
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => loginpage(),
-                      ),
-                    );
-                  },
-                  child: const Text('Cadastrar',
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 20,
-                          color: Colors.white)),
-                  style: ButtonStyle(
-                    backgroundColor:
-                        MaterialStateProperty.all<Color>(const Color.fromRGBO(41, 182, 246, 100)),
-                  ),
+              height: 32.0,
+            ),
+            SizedBox(
+              width: buttonWidth,
+              height: buttonHeight,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => loginpage(),
+                    ),
+                  );
+                },
+                child: const Text('Cadastrar',
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 20,
+                        color: Colors.white)),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                      const Color.fromRGBO(41, 182, 246, 100)),
                 ),
               ),
+            ),
           ],
         ),
       ),

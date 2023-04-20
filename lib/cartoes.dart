@@ -37,8 +37,10 @@ class _cartoesState extends State<cartoes> {
                 color: Colors.white,
               ),
             ),
+            
           ],
         ),
+          centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Padding(

@@ -15,7 +15,12 @@ class _forgotpasswordPageState extends State<forgotpasswordPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Esqueceu a senha'),
+        title: Text(
+          'Esqueci minha senha',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
         centerTitle: true,
       ),
       body: Container(
@@ -37,11 +42,22 @@ class _forgotpasswordPageState extends State<forgotpasswordPage> {
                 // exibir mensagem
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
-                    content: Text('Uma nova senha foi enviada para seu e-mail.'),
+                    content:
+                        Text('Uma nova senha foi enviada para seu e-mail.'),
                   ),
                 );
               },
-              child: Text('Recuperar senha'),
+              style: ElevatedButton.styleFrom(
+                minimumSize: Size(200, 50), // definir o tamanho mínimo do botão
+                textStyle:
+                    TextStyle(color: Colors.white), // definir a cor do texto
+              ),
+              child: Text(
+                'Recuperar senha',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
             ),
           ],
         ),
