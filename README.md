@@ -18,6 +18,6 @@ Gerenciamento de:
 - [x] Cartões
 - [x] Despesas
 
-### Galeria 📸
+## Galeria 📸
 
 ![Vídeo sem título ‐ Feito com o Clipchamp (1)](https://user-images.githubusercontent.com/90793860/236336175-526fab1d-84e2-4615-ae8d-914c2578aeaa.gif)
