@@ -10,9 +10,10 @@ class sobrepage extends StatelessWidget {
         title: Row(
           children: [
             Text(
-              'My Wallet',
+              'MY WALLET',
               style: TextStyle(
                 color: Colors.white,
+                fontWeight: FontWeight.bold, 
               ),
             ),
           ],

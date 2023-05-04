@@ -29,7 +29,7 @@ class menu extends StatelessWidget {
             ),
             Positioned(
               left: 50,
-              top: 5,
+              top: 50,
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
@@ -77,11 +77,12 @@ class menu extends StatelessWidget {
                     Image.asset('../images/deposito.png'),
                     SizedBox(width: 10),
                     Text(
-                      'Poupança',
+                      'POUPANÇA',
                       style: TextStyle(
                         fontFamily: 'Poppins',
-                        fontSize: 50,
+                        fontSize: 35,
                         color: Colors.white,
+                        fontWeight: FontWeight.bold, 
                       ),
                     ),
                   ],
@@ -115,11 +116,12 @@ class menu extends StatelessWidget {
                       Image.asset('../images/cartoes.png'),
                       SizedBox(width: 10),
                       Text(
-                        'Cartões',
+                        'CARTÕES',
                         style: TextStyle(
                           fontFamily: 'Poppins',
-                          fontSize: 50,
+                          fontSize: 35,
                           color: Colors.white,
+                          fontWeight: FontWeight.bold, 
                         ),
                       ),
                     ],
@@ -152,16 +154,17 @@ class menu extends StatelessWidget {
                       RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0)))),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Image.asset('../images/despesas.png'),
                   SizedBox(width: 10),
                   Text(
-                    'Despesas',
+                    'DESPESAS',
                     style: TextStyle(
                       fontFamily: 'Poppins',
-                      fontSize: 50,
+                      fontSize: 35,
                       color: Colors.white,
+                      fontWeight: FontWeight.bold, 
                     ),
                   ),
                 ],
