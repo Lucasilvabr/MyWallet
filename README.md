@@ -1,10 +1,10 @@
-## Desenvolvedor
+## Desenvolvedor 👨‍💻
 
-- Lucas da Silva 👨‍💻
+- Lucas da Silva 
 
-## R.A
+## R.A 💻
 
-- 2840482123026 💻
+- 2840482123026 
 
 ## Sobre o  My Wallet 💵
 
