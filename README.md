@@ -13,7 +13,7 @@ Através dele você terá acesso a várias contas ao mesmo tempo, podendo analis
 
 ##Funcionalidades ✅
 
-###Gerenciamento de:
+Gerenciamento de:
 - [x] Contas
 - [x] Cartões
-= [x] Despesas
+- [x] Despesas
