@@ -1,4 +1,4 @@
-## Desenvolvedor 👨‍💻
+## Desenvolvedor 👨🏾‍💻
 
 - Lucas da Silva 
 
