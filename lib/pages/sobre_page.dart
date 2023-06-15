@@ -7,7 +7,7 @@ class SobrePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Row(
+        title: Row(
           children: [
             Text(
               'MY WALLET',

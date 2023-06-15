@@ -41,7 +41,7 @@ class _DepositoPageState extends State<DepositoPage> {
       barrierDismissible: false,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Row(
+          title: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Flexible(
@@ -130,7 +130,7 @@ class _DepositoPageState extends State<DepositoPage> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        title: const Row(
+        title: Row(
           children: [
             Text(
               'Poupança',

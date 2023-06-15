@@ -48,7 +48,7 @@ class _ExpenseListPageState extends State<ExpenseListPage> {
       barrierDismissible: false,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Row(
+          title: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Flexible(

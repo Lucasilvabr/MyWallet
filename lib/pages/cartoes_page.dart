@@ -70,7 +70,7 @@ class _CartoesPageState extends State<CartoesPage> {
       barrierDismissible: false,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Row(
+          title: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text('Edite seu cartão',
@@ -194,7 +194,7 @@ class _CartoesPageState extends State<CartoesPage> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        title: const Row(
+        title: Row(
           children: [
             Text(
               'Adicionar Cartão',
