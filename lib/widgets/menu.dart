@@ -22,7 +22,7 @@ class _MenuState extends State<Menu> {
       barrierDismissible: false,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Row(
+          title: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text('Alterar meu nome',
