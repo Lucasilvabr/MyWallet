@@ -1,27 +1,27 @@
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
 
-class sobrepage extends StatelessWidget {
+class SobrePage extends StatelessWidget {
+  const SobrePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
+        title: const Row(
           children: [
             Text(
               'MY WALLET',
               style: TextStyle(
                 color: Colors.white,
-                fontWeight: FontWeight.bold, 
+                fontWeight: FontWeight.bold,
               ),
             ),
           ],
         ),
       ),
       body: Container(
-        margin: EdgeInsets.all(16),
-        padding: EdgeInsets.all(16),
+        margin: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           border: Border.all(
             color: Colors.grey,
@@ -33,40 +33,40 @@ class sobrepage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'MY WALLET é um gerenciador financeiro.',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 16),
-              Text(
+              const SizedBox(height: 16),
+              const Text(
                 'Foi desenvolvido para auxiliar o usuário em sua organização financeira. Através dele você terá acesso a várias contas ao mesmo tempo, podendo analisá-las de forma rápida, podendo ter um controle financeiro mais efetivo.',
                 style: TextStyle(fontSize: 16),
               ),
-              SizedBox(height: 16),
-              Text(
+              const SizedBox(height: 16),
+              const Text(
                 'Funcionalidades:',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 16),
-              Text(
+              const SizedBox(height: 16),
+              const Text(
                 '- Gerenciamento de:',
                 style: TextStyle(fontSize: 16),
               ),
-              Text(
+              const Text(
                 '- contas.',
                 style: TextStyle(fontSize: 16),
               ),
-              Text(
+              const Text(
                 '- cartões.',
                 style: TextStyle(fontSize: 16),
               ),
-              Text(
+              const Text(
                 '- despesas.',
                 style: TextStyle(fontSize: 16),
               ),
@@ -76,18 +76,18 @@ class sobrepage extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         'Desenvolvido por Lucas Silva',
                         style: TextStyle(fontSize: 16),
                       ),
-                      SizedBox(width: 8),
+                      const SizedBox(width: 8),
                       Container(
                         width: 30,
                         height: 30,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                            image: AssetImage('../images/perfil.jpg'),
+                            image: AssetImage('images/perfil.jpg'),
                           ),
                         ),
                       ),

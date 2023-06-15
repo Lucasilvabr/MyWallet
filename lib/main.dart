@@ -1,25 +1,26 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/loginpage.dart';
-import 'package:device_preview/device_preview.dart';
-void main() => runApp(
-  DevicePreview(
-    enabled: true,
-    builder: (context) => MyApp(), // Wrap your app
-  ),
-);
+import 'package:flutter_application_1/pages/login_page.dart';
+
+import 'firebase_options.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  ).then((value) {
+    runApp(const MyApp());
+  });
+}
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      useInheritedMediaQuery: true,
-      debugShowCheckedModeBanner: false,
-      locale: DevicePreview.locale(context),
-      builder: DevicePreview.appBuilder,
-      theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
-      home: loginpage(),
-    );
+    return const MaterialApp(
+        title: 'MyWallet',
+        debugShowCheckedModeBanner: false,
+        home: LoginPage());
   }
 }
- 
